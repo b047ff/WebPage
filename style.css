@@ -68,3 +68,32 @@ footer {
     font-size: 1.5em;
     color: #333;
 }
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* 小さい画面でのタイトルサイズ調整 */
+    }
+
+    .navbar {
+        flex-direction: column; /* ナビゲーションを縦並びに */
+        gap: 10px; /* 縦並びの間隔 */
+    }
+
+    .navbar a {
+        padding: 8px 12px; /* パディングを調整 */
+        font-size: 1em; /* フォントサイズ調整 */
+    }
+
+    .intro {
+        padding: 30px; /* 小さい画面でのパディング調整 */
+    }
+
+    footer {
+        padding: 15px; /* フッターのパディング調整 */
+    }
+
+    .contact-info h2 {
+        font-size: 1.2em; /* お問い合わせ先のタイトルサイズ調整 */
+    }
+}
