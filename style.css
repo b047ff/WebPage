@@ -1,21 +1,50 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f4ef;
+    background-color: #f4fdf4; /* 薄い緑の背景 */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #f7c6a9;
+    background-color: #b2e6b2; /* 明るい緑のヘッダー */
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #e8976a;
+    border-bottom: 3px solid #8bc58b; /* 濃い緑のボーダー */
 }
 
 h1 {
     font-size: 2.5em;
-    color: #4e4e4e;
+    color: #2f2f2f; /* ダークグレーの文字 */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* メニュー項目の間隔を設定 */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2f2f2f; /* ダークグレーの文字 */
+    padding: 10px 15px; /* パディングを追加 */
+    border-radius: 5px; /* ボタンの角を丸く */
+    transition: background-color 0.3s, color 0.3s; /* ホバー時のアニメーション */
+}
+
+.navbar a:hover {
+    background-color: #8bc58b; /* ホバー時の背景色 */
+    color: #fff; /* ホバー時の文字色 */
 }
 
 .intro {
@@ -23,44 +52,12 @@ h1 {
     padding: 50px;
 }
 
-.services {
-    text-align: center;
-    padding: 30px;
-    background-color: #fff7f2;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.services h2 {
-    color: #333;
-}
-
-.services ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.services li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.services a {
-    text-decoration: none;
-    color: #e8976a;
-}
-
-.services a:hover {
-    text-decoration: underline;
-}
-
 footer {
-    background-color: #f7c6a9;
+    background-color: #b2e6b2; /* 明るい緑のフッター */
     padding: 20px;
     text-align: center;
-    border-top: 3px solid #e8976a;
-    color: #4e4e4e;
+    border-top: 3px solid #8bc58b; /* 濃い緑のボーダー */
+    color: #2f2f2f; /* ダークグレーの文字 */
 }
 
 .contact-info {
